@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.card > img {
+  width: 200px;
+  height: 300px;
+}
+
+.card > h1 {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
