@@ -4,6 +4,7 @@ import Item from './pages/item/item';
 import Favourite from './pages/favourite/favourite';
 import Home from './pages/home/home';
 import Header from './components/header';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/favorite" element={<Favourite />} />
           <Route exact path="/shop-item/:id" element={<Item />} />
           <Route exact path="/" element={<Home />} />
+          <Route exact path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
     </div>
