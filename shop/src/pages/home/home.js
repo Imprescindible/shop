@@ -1,10 +1,7 @@
 import useApi from '../../custom-hooks/use-api';
 import styles from './home.module.css';
 const Home = () => {
-  const { data, isLoading, getData } = useApi(
-    'https://fakestoreapi.com/products',
-    [],
-  );
+  const { data, isLoading } = useApi('https://fakestoreapi.com/products', []);
   console.log(data);
   return (
     <>

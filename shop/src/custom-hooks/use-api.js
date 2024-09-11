@@ -15,6 +15,6 @@ const useApi = (url, initialState) => {
     getData();
   }, []);
 
-  return { data, isLoading, getData };
+  return { data, isLoading };
 };
 export default useApi;
