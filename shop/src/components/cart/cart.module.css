@@ -1,0 +1,41 @@
+.container {
+  background: white;
+  width: 600px;
+  min-height: 400px;
+  border-radius: 10px;
+  padding: 16px;
+}
+.container > .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 10px;
+}
+.closeButton:hover:not([disabled]) {
+  background-color: #c9bfbf;
+}
+.contentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content {
+  overflow: auto;
+  height: 350px;
+}
+.description {
+  width: 200px;
+}
