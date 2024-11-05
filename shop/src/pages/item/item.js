@@ -1,8 +1,10 @@
 import { useSelector } from 'react-redux';
+import { useParams } from 'react-router';
 
 const Item = () => {
   const cart = useSelector((state) => state.cart.cartList);
-  console.log(cart);
+  const { id } = useParams();
+  console.log(id);
 
   return <></>;
 };
