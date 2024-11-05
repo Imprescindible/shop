@@ -1,9 +1,9 @@
 import { useForm } from 'react-hook-form';
 import styles from './login.module.css';
-import { useLoginMutation } from '../../services/products/products';
 import { Navigate, useNavigate } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateIsLogin } from '../../features/auth/auth';
+import { useLoginMutation } from '../../services/auth/authApi';
 
 const Login = () => {
   const [onLogin, { isLoading, isError }] = useLoginMutation();

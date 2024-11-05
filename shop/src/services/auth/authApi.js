@@ -1,12 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-export const productsApi = createApi({
-  reducerPath: 'productsApi',
+export const authApi = createApi({
+  reducerPath: 'authApi',
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://fakestoreapi.com/',
   }),
 
-  tagTypes: ['getProductsAll', 'getProduct'],
   endpoints: (builder) => ({
     login: builder.mutation({
       query: (body) => ({
@@ -20,4 +19,4 @@ export const productsApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useLoginMutation } = productsApi;
+export const { useLoginMutation } = authApi;
