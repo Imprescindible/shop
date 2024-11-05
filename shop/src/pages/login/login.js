@@ -3,13 +3,13 @@ import styles from './login.module.css';
 import { useLoginMutation } from '../../services/products/products';
 import { Navigate, useNavigate } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateIsLogin } from '../../features/test';
+import { updateIsLogin } from '../../features/auth/auth';
 
 const Login = () => {
   const [onLogin, { isLoading, isError }] = useLoginMutation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { isLogined } = useSelector((state) => state.cart);
+  const { isLogined } = useSelector((state) => state.auth);
 
   const {
     register,

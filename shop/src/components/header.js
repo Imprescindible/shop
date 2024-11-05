@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from './header.module.css';
 import Cart from './cart/cart';
-import { updateIsLogin } from '../features/test';
 import { useDispatch, useSelector } from 'react-redux';
+import { updateIsLogin } from '../features/auth/auth';
 
 const Header = () => {
   const dispatch = useDispatch();
-  const isLogined = useSelector((state) => state.cart.isLogined);
+  const isLogined = useSelector((state) => state.auth.isLogined);
   const logOut = () => {
     dispatch(updateIsLogin(false));
     localStorage.removeItem('token');

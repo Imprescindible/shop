@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 export const decodeJWT = (token) => {
   try {
     const parts = token.split('.');
-    console.log(parts);
+
     if (parts.length !== 3) {
       return false;
     }
